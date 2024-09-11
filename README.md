@@ -7,10 +7,8 @@ This project demonstrates hand gesture control of keyboard inputs using MediaPip
 1. Install the required dependencies:
    - OpenCV: `pip install opencv-python`
    - Mediapipe: `pip install mediapipe`
-   - PyAutoGUI: `pip install pyautogui`
-   - 
-## Install the required dependencies by running:
-pip install -r requirements.txt
+   - PyAutoGUI: `pip install pyautogui` or 
+   - pip install -r requirements.txt
 
 2. Clone or download this repository.
 
