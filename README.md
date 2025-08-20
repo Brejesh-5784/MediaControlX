@@ -1,45 +1,42 @@
-# Hand Gesture Control using MediaPipe and PyAutoGUI
+Hand Gesture Control using MediaPipe & PyAutoGUI
+This project enables real-time hand gesture control of keyboard inputs using MediaPipe and PyAutoGUI. It detects hand landmarks from a webcam feed and maps specific gestures to keyboard actions.
 
-This project demonstrates hand gesture control of keyboard inputs using MediaPipe and PyAutoGUI libraries. It allows you to control certain keyboard commands by detecting hand gestures from a webcam feed.
+🚀 Features
+* Real-time hand tracking using MediaPipe
+* Control keyboard inputs using hand gestures
+* Simple and lightweight implementation
+* Works on Windows, macOS, and Linux
 
-## Installation
+📦 Installation
+1. Clone the repository: git clone https://github.com/your-username/hand-gesture-control.git
+2. cd hand-gesture-control
+3. 
+4. Install dependencies: pip install -r requirements.txt
+5.  Or install manually: pip install opencv-python mediapipe pyautogui
+6. 
 
-1. Install the required dependencies:
-   - OpenCV: `pip install opencv-python`
-   - Mediapipe: `pip install mediapipe`
-   - PyAutoGUI: `pip install pyautogui` or 
-   - pip install -r requirements.txt
-
-2. Clone or download this repository.
-
-## Usage
-
+🧩 Usage
 1. Connect a webcam to your computer.
+2. Run the script: python hand_gesture_control.py
+3. 
+4. A webcam window will open. Show your hand in front of the camera and use the following gestures:
+Gesture	Fingers	Action
+👆	1 finger	Press Right Arrow
+✌️	2 fingers	Press Left Arrow
+🖖	3 fingers	Press Up Arrow
+✋	4 fingers	Press Down Arrow
+🖐️	5 fingers	Press Spacebar
+	4	Press Esc to exit the program.
 
-2. Run the code:
+📝 Notes
+* Currently supports single-hand detection.
+* Gesture accuracy may vary depending on lighting and camera quality.
+* Adjust thresholds in the code if required for better performance.
 
+🤝 Contributing
+Contributions are welcome! If you find any issues or have suggestions:
+* Open an issue
+* Submit a pull request
 
-3. A window will open showing the webcam feed. Position your hand in front of the camera.
-
-4. Perform the following hand gestures to control the keyboard inputs:
-- 1 finger: Presses the "right" arrow key.
-- 2 fingers: Presses the "left" arrow key.
-- 3 fingers: Presses the "up" arrow key.
-- 4 fingers: Presses the "down" arrow key.
-- 5 fingers: Presses the "space" key.
-
-The program will detect the gestures in real-time and simulate the corresponding keyboard inputs.
-
-## Notes
-
-- The code assumes that only one hand is present in the camera frame. It will track the landmarks and gestures of the first detected hand.
-- The gesture recognition may not be 100% accurate and may require some adjustments or fine-tuning for different lighting conditions or hand shapes.
-- Press the "Esc" key to exit the program.
-
-## Contributing
-
-Contributions to this project are welcome. If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request on GitHub.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+📄 License
+This project is licensed under the MIT License.
